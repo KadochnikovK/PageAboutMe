@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #FFFFFF;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: keep-all;
+    hyphens: auto;
+    
+}
+
+html, body {
+    height: 100%;
+}
+
+.content {
+    max-width: 640px;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction:column;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+a {
+    color: rgb(206, 107, 168);
+}
+
+.hiall img {
+    padding-top: 30px;
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+    -webkit-filter: blur(20px);
+    filter: blur(20px);
+    -webkit-animation: blur 1s forwards;
+    animation: blur 1s forwards;
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.hiall h1 { 
+    padding-top: 40px;
+    position: relative;
+    -webkit-filter: blur(20px);
+    filter: blur(20px);
+    -webkit-animation: blur 1s forwards;
+    animation: blur 1s forwards;
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.hiall h1>span {
+    position: absolute;
+    right: 102%;
+}
+
+.aboutme {
+    padding-top: 50px;
+}
+
+.aboutme:nth-last-child(1) {
+    padding-bottom: 300px;
+}
+
+.showmenomber {
+    padding: 50px 0 25px;
+    margin: 0 auto;
+}
+
+.aboutme p {
+    font-size: 24px;
+    line-height: 1.8;
+}
+
+
+.btn { 
+    display: none; 
+}
+.btn:not(:checked) + label + * { 
+    display: none; 
+} 
+
+.btn:not(:checked) + label, .btn:checked + label {
+    padding: 15px 30px;
+    border-radius: 10pc;
+    background: linear-gradient(to top right, rgb(101, 115, 255), rgb(111, 114, 247), rgb(120, 114, 239), rgb(130, 113, 231), rgb(139, 112, 223), rgb(149, 111, 215), rgb(158, 111, 208), rgb(168, 110, 200), rgb(177, 109, 192), rgb(187, 108, 184), rgb(196, 108, 176), rgb(206, 107, 168));
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+
+    cursor: pointer;
+    display: inline-block;
+}
+.btn:checked + label {
+  display: none;
+}
+
+.phonenumber {
+    margin: 0 auto;
+    padding: 7px 0;
+}
+
+.phonenumber a {
+    font-size: 30px;
+    color: rgb(206, 107, 168);
+    text-decoration: none;
+}
+
+
+@media (min-width: 1320px) {
+    .phonenumber a {
+        font-size: 60px !important;
+    }
+    
+    h1 {
+        font-size: 90px;
+    }
+    
+    .content {
+        width: 1220px;
+        max-width: 1220px;
+    }
+
+    .hiall img {
+        width: 450px;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        z-index: -1;
+        padding-top: 0;
+    }
+
+    .hiall h1 { 
+        margin-left: 450px;
+        padding: 40px 0 40px 40px;
+    }
+
+    .aboutme p {
+        font-size: 50px;
+    }
+
+    .showmenomber {
+        padding: 100px 0 50px;
+    }
+
+    .phonenumber {
+        padding: 7.5px 0;
+    }
+
+    .aboutme {
+        padding-top: 100px;
+    }
+    
+
+    .btn:not(:checked) + label, .btn:checked + label {
+        padding: 30px 60px;
+        font-size: 40px;
+    }
+}
+
+@-webkit-keyframes blur {
+    100% {
+        -webkit-filter: blur(0);
+        filter: blur(0);
+    }
+}
